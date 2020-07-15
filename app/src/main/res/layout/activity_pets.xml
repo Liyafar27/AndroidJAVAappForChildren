@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".PetsActivity"
+    android:background="@drawable/gradient">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:gravity="fill"
+        android:layout_height="fill_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:stretchMode="columnWidth"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/cat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/cat"
+            android:gravity="fill"
+            android:onClick="buttonTappedPets"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/guineapig"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/guineapig"
+            android:gravity="fill"
+            android:onClick="buttonTappedPets"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/dog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/dog"
+            android:gravity="fill"
+            android:onClick="buttonTappedPets"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/parrot"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/parrot"
+            android:gravity="fill"
+            android:onClick="buttonTappedPets"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/turtle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/turtle"
+            android:gravity="fill"
+            android:onClick="buttonTappedPets"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/hamster"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/hamster"
+            android:gravity="fill"
+            android:onClick="buttonTappedPets"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/buttonHomePets"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rownine"
+            android:gravity="center_horizontal"
+            android:onClick="buttonHomePets"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="0.5" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

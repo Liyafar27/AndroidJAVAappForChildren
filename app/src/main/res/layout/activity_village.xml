@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VillageActivity"
+    android:background="@drawable/gradient">>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <Button
+            android:id="@+id/cow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/cow"
+            android:onClick="buttonTappedVillage"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:id="@+id/goat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/goat"
+            android:onClick="buttonTappedVillage"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/pig"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/pig"
+            android:onClick="buttonTappedVillage"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/rooster"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/rooster"
+            android:onClick="buttonTappedVillage"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/horse"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/horse"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1"
+            android:onClick="buttonTappedVillage"/>
+
+        <Button
+            android:id="@+id/goose"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/goose"
+            android:onClick="buttonTappedVillage"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rownine"
+            android:gravity="center_horizontal"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="0.5"
+            android:onClick="buttonHomeVillage"
+            />
+
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

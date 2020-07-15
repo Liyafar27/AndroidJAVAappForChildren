@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForestActivity"
+    android:background="@drawable/gradient">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <Button
+            android:id="@+id/bear"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bear"
+            android:onClick="buttonTappedForest"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1"
+            />
+
+        <Button
+            android:id="@+id/fox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/fox"
+            android:onClick="buttonTappedForest"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/wolf"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/wolf"
+            android:onClick="buttonTappedForest"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/snake"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/snake"
+            android:onClick="buttonTappedForest"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/frog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/frog"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1"
+            android:onClick="buttonTappedForest"/>
+
+        <Button
+            android:id="@+id/hedgehog"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/hedgehog"
+            android:onClick="buttonTappedForest"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rownine"
+            android:gravity="center_horizontal"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="0.5"
+            android:onClick="buttonHomeForest"
+           />
+
+
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
